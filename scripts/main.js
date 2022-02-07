@@ -6,6 +6,7 @@ const cartContent = document.getElementById('cart-content');
 const cartClose = document.getElementById('cart-close');
 const itemBox = document.querySelectorAll('.products__item');
 const cartIcon = document.getElementById('cart-icon');
+const amount = document.getElementById('amount')
 itemBox.forEach(element => {
     element.querySelector('.products__btn').addEventListener('click', CART.addToCart.bind(CART, '.products__title', '.products__price'));
 });
