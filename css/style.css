@@ -1,0 +1,78 @@
+.header{
+    display: flex;
+    justify-content: flex-end;
+}
+.cart-icon{
+    width: 100px;
+}
+.products{
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 10px;
+}
+.products__item {
+    background-color: yellowgreen;
+    border: 7px solid green;
+    border-radius: 7px;
+    padding: 15px;
+    box-shadow: 8px 8px 8px -2px gray;
+}
+.products__title{
+    color: green;
+}
+.products__price{
+    color: green;
+}
+.products__btn{
+    width: 100px;
+    height: 40px;
+    color: green;
+    background-color: greenyellow;
+    border-color: 10px solid green;
+    border-radius: 5px;
+}
+.products__btn:hover{
+    background-color: rgb(255, 0, 0);
+    color: orange;
+}
+.products__img{
+    width: 200px;
+    height: 120px;
+    border-radius: 5px;
+}
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(128, 128, 128, 0.514);
+    z-index: 10000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.cart{
+    width: 500px;
+    height: 400px;
+    background-color: honeydew;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+.cart__close{
+    position: relative;
+    left: 470px;
+    top: -15px;
+    color: white;
+    background-color: red;
+    border: 5px solid red;
+    border-radius: 5px;
+}
+.cart__close:hover{
+    color: rgb(126, 126, 126);
+    background-color: rgb(126, 0, 0);
+    border: 5px solid rgb(126, 0, 0);
+}

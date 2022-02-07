@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./scripts/cart.js" defer></script>
+    <script src="./scripts/main.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <img src="./images/cart.jpg" alt="cart" class="cart-icon" id="cart-icon">
+    </header>
+    <main>
+        <div class="products">
+            <div class="products__item">
+                <h4 class="products__title">Iphone 13</h4>
+                <a href="#" class="products_link">
+                    <img src="./images/iphone_13.jpg" alt="" class="products__img">
+                </a>
+                <p class="product__price">Price: <span class="products__price">1999</span>$</p>
+                <button data-id="0" class="btn products__btn">Add to cart</button>
+            </div>
+
+            <div class="products__item">
+                <h4 class="products__title">Mi Band 6</h4>
+                <a href="#" class="products_link">
+                    <img src="./images/mi_band_6.jpg" alt="" class="products__img">
+                </a>
+                <p class="product__price">Price: <span class="products__price">49</span>$</p>
+                <button data-id="1" class="btn products__btn">Add to cart</button>
+            </div>            
+            
+            <div class="products__item">
+                <h4 class="products__title">JBL Party</h4>
+                <a href="#" class="products_link">
+                    <img src="./images/jbl_partybox.jpg" alt="" class="products__img">
+                </a>
+                <p class="product__price">Price: <span class="products__price">259</span>$</p>
+                <button data-id="2" class="btn products__btn">Add to cart</button>
+            </div>            
+            
+            <div class="products__item">
+                <h4 class="products__title">JBL e55bt</h4>
+                <a href="#" class="products_link">
+                    <img src="./images/jbl_e55bt.jpg" alt="" class="products__img">
+                </a>
+                <p class="product__price">Price: <span class="products__price">99</span>$</p>
+                <button data-id="3" class="btn products__btn">Add to cart</button>
+            </div>            
+            
+            <div class="products__item">
+                <h4 class="products__title">SAMSUNG 7 series 43*</h4>
+                <a href="#" class="products_link">
+                    <img src="./images/samsung_series_7_43.jpg" alt="" class="products__img">
+                </a>
+                <p class="product__price">Price: <span class="products__price">649</span>$</p>
+                <button data-id="4" class="btn products__btn">Add to cart</button>
+            </div>            
+            
+            <div class="products__item">
+                <h4 class="products__title">POCO X3 </h4>
+                <a href="#" class="products_link">
+                    <img src="./images/poco_x3.jpg" alt="" class="products__img">
+                </a>
+                <p class="product__price">Price: <span class="products__price">249</span>$</p>
+                <button data-id="5" class="btn products__btn">Add to cart</button>
+            </div>            
+            
+            <div class="products__item">
+                <h4 class="products__title">Ipad 3</h4>
+                <a href="#" class="products_link">
+                    <img src="./images/ipad_3_mini.jpg" alt="" class="products__img">
+                </a>
+                <p class="product__price">Price: <span class="products__price">1499</span>$</p>
+                <button data-id="6" class="btn products__btn">Add to cart</button>
+            </div>            
+            
+            <div class="products__item">
+                <h4 class="products__title">Huami GTS 2e</h4>
+                <a href="#" class="products_link">
+                    <img src="./images/huami_gts_2e.jpg" alt="" class="products__img">
+                </a>
+                <p class="product__price">Price: <span class="products__price">199</span>$</p>
+                <button data-id="7" class="btn products__btn">Add to cart</button>
+            </div>            
+            
+            <div class="products__item">
+                <h4 class="products__title">Ipod MP3</h4>
+                <a href="#" class="products_link">
+                    <img src="./images/ipod.png" alt="" class="products__img">
+                </a>
+                <p class="product__price">Price: <span class="products__price">199</span>$</p>
+                <button data-id="8" class="btn products__btn">Add to cart</button>
+            </div>            
+            
+            <div class="products__item">
+                <h4 class="products__title">Airpods 2 pro</h4>
+                <a href="#" class="products_link">
+                    <img src="./images/airpods_2.jpg" alt="" class="products__img">
+                </a>
+                <p class="product__price">Price: <span class="products__price">299</span>$</p>
+                <button data-id="9" class="btn products__btn">Add to cart</button>
+            </div>            
+            
+            <div class="products__item">
+                <h4 class="products__title">Airdots black</h4>
+                <a href="#" class="products_link">
+                    <img src="./images/airdots.jpg" alt="" class="products__img">
+                </a>
+                <p class="product__price">Price: <span class="products__price">35</span>$</p>
+                <button data-id="10" class="btn products__btn">Add to cart</button>
+            </div>            
+            
+            <div class="products__item">
+                <h4 class="products__title">Apple phone case/battery supply</h4>
+                <a href="#" class="products_link">
+                    <img src="./images/iphone_charge_case.jpg" alt="" class="products__img">
+                </a>
+                <p class="product__price">Price: <span class="products__price">149</span>$</p>
+                <button data-id="11" class="btn products__btn">Add to cart</button>
+            </div>                      
+        <div class="modal" id="modal">
+            <div class="cart" id="cart">
+                <button class="cart__clear" id="cart-clear">Clear cart</button>
+                <div id="cart-content"></div>
+                <span id="cart-close" class="cart__close">&#10008;</span>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
